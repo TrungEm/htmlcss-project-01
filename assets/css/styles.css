@@ -441,6 +441,36 @@ a {
     background: #e9e9e9;
 }
 
+.stats .avatar-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 14px;
+    margin-top: 26px;
+}
+
+.stats .avatar-group {
+    display: flex;
+}
+
+.stats .avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: var(--bg-avatar, #ffffff);
+    font-weight: 450;
+    font-size: 0.7rem;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}
+
+.stats .avatar ~ .avatar {
+    margin-left: -3px;
+}
+
 .stats .img-block .image {
     display: block;
     margin-left: auto;
@@ -478,4 +508,72 @@ a {
     font-size: 1.6rem;
     line-height: 1.88;
     color: #5a6473;
+}
+
+.stats .row-qty {
+    margin-top: 110px;
+    justify-content: space-between;
+    padding: 0 32px;
+}
+
+.stats .qty {
+    font-weight: 600;
+    font-size: 6.4rem;
+    color: #000000;
+}
+
+.stats .qty-desc {
+    margin-top: 24px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: #7b8087;
+}
+
+/*========== Subscription ==========*/
+.subscription {
+    padding-top: 90px;
+}
+
+.subscription .body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 370px;
+    background: #063183;
+    border-radius: 20px;
+}
+
+.subscription .info {
+    width: 671px;
+    padding: 0 80px;
+}
+
+.subscription .sub-title {
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+.subscription .desc {
+    --line-clamp: 3;
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    color: #ffffff;
+    opacity: 0.75;
+}
+
+.subscription .btn {
+    margin-top: 20px;
+    min-width: 151px;
+    color: #002366;
+    background-color: #ffffff;
+}
+
+.subscription .image {
+    position: absolute;
+    bottom: 0;
+    right: 221px;
 }
